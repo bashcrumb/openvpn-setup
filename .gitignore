@@ -1,0 +1,52 @@
+# OpenVPN Easy Setup .gitignore
+
+# Sensitive files (never commit these!)
+*.key
+*.crt
+*.pem
+*.ovpn
+*.p12
+*.pfx
+ta.key
+ca.key
+server.key
+dh.pem
+
+# PKI directory
+pki/
+easy-rsa/pki/
+
+# Logs
+*.log
+openvpn*.log
+status.log
+
+# Backup files
+backup-*/
+*.backup
+*.bak
+
+# Testing artifacts
+test-output/
+*.test
+
+# OS files
+.DS_Store
+Thumbs.db
+*~
+.*.swp
+.*.swo
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Configuration files with secrets
+openvpn-setup.conf
+!openvpn-setup.conf.example
